@@ -1,4 +1,3 @@
-````md
 # Text Summarization using LLM
 
 ## Overview
@@ -53,7 +52,7 @@ It runs locally on the user’s system and can be accessed through a browser usi
    ```bash
    git clone https://github.com/sitaram016/xsum-llm-summarizer.git
    cd xsum-llm-summarizer
-````
+
 
 2. **Install dependencies**
 
@@ -94,3 +93,4 @@ It runs locally on the user’s system and can be accessed through a browser usi
 
 ```
 ```
+
