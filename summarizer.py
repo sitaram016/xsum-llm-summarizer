@@ -1,20 +1,14 @@
-from transformers import pipeline
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
 
-# Load model ONCE (global)
-summarizer = pipeline(
-    "summarization",
-    model="facebook/bart-large-cnn"
-)
+load_dotenv()
 
-def preprocess(text):
-    return text.replace("\n", " ").strip()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 def summarize_text(text):
-    clean_text = preprocess(text)
-    summary = summarizer(
-        clean_text,
-        max_length=130,
-        min_length=30,
-        do_sample=False
+    response = client.responses.create(
+        model="gpt-4.1-mini",
+        input=f"Summarize the following text concisely:\n{text}"
     )
-    return summary[0]["summary_text"]
+    return response.output_text
