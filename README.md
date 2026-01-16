@@ -45,16 +45,49 @@ The application runs locally on the user’s system and opens in a browser.
 
 ---
 
+````md
 ## How to Run the Application Locally
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/sitaram016/xsum-llm-summarizer.git
-cd xsum-llm-summarizer
+1. **Clone the repository**
 
-### 2. Install dependencies
-pip install -r requirements.txt
-http://localhost:8501
+   ```bash
+   git clone https://github.com/sitaram016/xsum-llm-summarizer.git
+   cd xsum-llm-summarizer
+````
+
+2. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up environment variables**
+
+   Create a `.env` file in the project directory and add your OpenAI API key:
+
+   ```env
+   OPENAI_API_KEY=your_api_key_here
+   ```
+
+4. **Run the web application**
+
+   ```bash
+   python -m streamlit run app.py
+   ```
+
+5. **Open in browser**
+
+   After running the command, open the following URL in your browser:
+
+   ```
+   http://localhost:8501
+   ```
+
+   Paste any text and click **Summarize** to view the output.
+
+```
+```
+
 
 
 
