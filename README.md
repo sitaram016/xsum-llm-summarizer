@@ -53,25 +53,9 @@ git clone https://github.com/sitaram016/xsum-llm-summarizer.git
 cd xsum-llm-summarizer
 
 2. Install dependencies
-```bash
 pip install -r requirements.txt
-Set up environment variables
-
-Create a .env file in the project directory and add your OpenAI API key:
-
-OPENAI_API_KEY=your_api_key_here
-
-
-Run the web application
-
-python -m streamlit run app.py
-
-
-Open in browser
-
-After running the command, open the following URL in your browser:
-
 http://localhost:8501
 
 
 Paste any text and click Summarize to view the output.
+
