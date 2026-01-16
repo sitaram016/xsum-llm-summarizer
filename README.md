@@ -1,3 +1,4 @@
+````md
 # Text Summarization using LLM
 
 ## Overview
@@ -9,10 +10,10 @@ The focus of this project is to demonstrate the overall GenAI pipeline and appli
 ---
 
 ## Model Choice
-For summarization, a pretrained LLM is used instead of training a model from scratch.
-This decision was made to reduce complexity and execution time, and to focus on inference and system design.
+For summarization, a pretrained Large Language Model is used instead of training a model from scratch.
+This reduces complexity and execution time and allows the focus to remain on inference and system design.
 
-Using a managed LLM API also avoids environment-specific issues related to heavy ML dependencies.
+A managed LLM API is used to avoid environment-specific issues related to heavy machine learning dependencies.
 
 ---
 
@@ -40,12 +41,11 @@ This is sufficient because modern LLMs are robust to raw text input.
 ---
 
 ## Web Application
-The web interface is built using **Streamlit**.
-The application runs locally on the user’s system and opens in a browser.
+The web application is built using **Flask**.
+It runs locally on the user’s system and can be accessed through a browser using a local URL.
 
 ---
 
-````md
 ## How to Run the Application Locally
 
 1. **Clone the repository**
@@ -72,7 +72,7 @@ The application runs locally on the user’s system and opens in a browser.
 4. **Run the web application**
 
    ```bash
-   python -m streamlit run app.py
+   python app.py
    ```
 
 5. **Open in browser**
@@ -80,15 +80,17 @@ The application runs locally on the user’s system and opens in a browser.
    After running the command, open the following URL in your browser:
 
    ```
-   http://localhost:8501
+   http://127.0.0.1:5000
    ```
 
    Paste any text and click **Summarize** to view the output.
 
+---
+
+## Notes
+
+* The `.env` file is excluded from version control to keep API keys secure.
+* This project is intended for demonstration and evaluation purposes.
+
 ```
 ```
-
-
-
-
-
