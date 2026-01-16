@@ -52,10 +52,10 @@ The application runs locally on the user’s system and opens in a browser.
 git clone https://github.com/sitaram016/xsum-llm-summarizer.git
 cd xsum-llm-summarizer
 
-2. Install dependencies
+### 2. Install dependencies
 pip install -r requirements.txt
 http://localhost:8501
 
 
-Paste any text and click Summarize to view the output.
+
 
